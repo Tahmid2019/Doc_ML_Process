@@ -1,8 +1,6 @@
-# Detailed Guide for Classification Problems
-
 This document outlines a comprehensive approach for tackling both binary and multiclass classification problems.
 
-# Dataset Preparation for Machine Learning
+# Dataset Preparation for Classification Problems
 
 ## Overview
 Preparing a dataset for machine learning, whether for binary or multiclass classification, involves several key steps. Each of these steps is crucial to ensure the data is accurately represented and suitable for modeling.
@@ -33,7 +31,7 @@ The application of these pre-processing techniques depends on the specific requi
 Careful data preparation is essential for the success of a machine learning project, ensuring the dataset is well-structured, clean, and suitable for analysis and modeling.
 
 
-# Data Analysis Steps in Machine Learning
+# Data Analysis Steps in Classification Problems
 
 ## Overview
 Data analysis in machine learning involves exploring and modifying data to better understand its characteristics and prepare it for effective modeling. Two key components of this process are Exploratory Data Analysis (EDA) and Feature Selection/Engineering.
