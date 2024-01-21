@@ -510,5 +510,56 @@ In addition to the core model training and evaluation steps, several concepts an
 
 In summary, covariance gives a sense of whether two things vary together, but correlation provides a scaled and clearer picture of how well they vary together.
 
+### Basic Statistical Concepts
+
+#### Mean
+- **Definition**: The average of a set of numbers.
+- **Calculation**: Add up all the numbers and then divide by the count of the numbers.
+- **Example**: If you have numbers 2, 3, and 5, the mean is (2+3+5)/3 = 3.33.
+
+#### Median
+- **Definition**: The middle value in a list of numbers.
+- **Calculation**: Arrange the numbers in order and find the one that is exactly in the middle.
+- **Example**: In the numbers 1, 3, 7, the median is 3. If there's an even number of observations, the median is the average of the two middle numbers.
+
+#### Standard Deviation
+- **Definition**: A measure of how spread out numbers are from the mean.
+- **Calculation**: It's a bit complex - involves squaring the difference of each number from the mean, averaging those, and then taking the square root.
+- **Example**: In a class, if most students score close to the average, the standard deviation is low. If scores are all over the place, it's high.
+- **Usage in Machine Learning**: 
+  - Standard deviation is crucial in data preprocessing to understand the variability or dispersion of the dataset.
+  - It helps in feature scaling, particularly in techniques like normalization or standardization, where features are scaled to have specific statistical properties.
+  - A high standard deviation in a feature could mean more variability, and hence, it might require normalization to make the model less sensitive to large variances.
+  - Also useful in anomaly detection, as data points that are several standard deviations away from the mean can be considered outliers.
+
+#### Percentile
+- **Expanded Definition**: Percentiles are used in a machine learning dataset to understand the distribution of data and to identify outliers or unusual data points.
+- **Machine Learning Example**:
+  - In a dataset with housing prices, the 90th percentile might be a value such that 90% of the houses are priced below this value. This helps identify the top 10% of the housing market in terms of price. 
+  - Similarly, the 25th percentile could indicate a lower-end price in the market, as 25% of the houses are priced below this and 75% are above.
+- **Usage in Preprocessing**: In machine learning, understanding percentiles can help in preprocessing data, such as scaling features or handling outliers. For instance, you might decide to remove or closely examine any data points above the 95th percentile as potential outliers or anomalies.
+
+### Types of Plots
+
+#### Box Plot
+- **Description**: Shows the distribution of a dataset.
+- **Details**: It displays the median (middle value) and the quartiles (25th, 50th, and 75th percentiles). The 'whiskers' extend to show the range of the data, and points outside of this range are often considered outliers.
+- **Usefulness**: Great for understanding the spread and center of the data, and for identifying outliers.
+
+#### Pair Plot
+- **Description**: A pair plot, also known as a scatterplot matrix, is a matrix of scatter plots that visualizes multiple pairwise relationships between different variables in a dataset.
+- **Expanded Details**:
+  - Each cell in the matrix represents a scatter plot of two variables, such as age vs income.
+  - The diagonal often contains histograms or density plots showing the distribution of each variable.
+  - Useful in exploratory data analysis to spot trends, correlations, or patterns in multi-dimensional data.
+  - Can include additional dimensions of information using color to represent different categories or clusters.
+- **Usefulness**: Helps in quickly identifying relationships and correlations between multiple variables, spotting anomalies, trends, and patterns in data, crucial for feature selection in machine learning.
+  - **Example in Machine Learning**: In a dataset with features like house size, location, number of rooms, and price, it visually demonstrates relationships between each pair of features.
+
+#### Histogram
+- **Description**: A graphical display of data using bars of different heights.
+- **Details**: It groups numbers into ranges and the height of each bar depicts the frequency of each range or bin.
+- **Example**: In a histogram of test scores, the x-axis could be score ranges and the y-axis would show how many students got scores in each range.
+
 ## Notes
 A comprehensive understanding of these miscellaneous concepts is crucial for the holistic development and evaluation of classification models. They provide the necessary depth and context for effectively tackling real-world problems.
