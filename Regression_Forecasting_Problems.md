@@ -175,10 +175,7 @@ Performance metrics are essential in evaluating the accuracy and effectiveness o
 ### 8. Learning Curve
 - **Description**: A learning curve is a graphical representation that shows how the performance of a machine learning model changes as the amount of training data increases. It typically plots training and validation performance metrics against the size of the training dataset.
 - **Interpreting Learning Curves**:
-  - **Ideal Curve**: Training and validation scores start apart and converge as training data increases, indicating good learning and generalization.
-  - **The Training Score starts high and decreases slightly as more data is added, indicating the model is learning and generalizing well.
-  - **The Validation Score begins low and improves as more training data is added, showing the model is effectively learning from the increased data.
-  - **Eventually, both scores converge to a stable point, indicating a good balance between the model's ability to learn and generalize.
+  - **Ideal Curve**: Training and validation scores start apart and converge as training data increases, indicating good learning and generalization. The Validation Score begins low and improves as more training data is added, showing the model is effectively learning from the increased data. Eventually, both scores converge to a stable point, indicating a good balance between the model's ability to learn and generalize.
   - **Overfitting**: High training accuracy with low validation accuracy that persists as more data is added, suggesting memorization rather than learning. A persistent gap between the training and validation scores, even as more data is added.
   - **Underfitting**: Both training and validation scores are low, showing the model is too simple and unable to capture the underlying pattern. Neither the training nor the validation score improves significantly with more data.
 - **Usage**: Essential in diagnosing model behavior, especially for understanding if adding more data is helpful, or if the model needs adjustments for complexity.
