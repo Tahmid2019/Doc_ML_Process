@@ -167,6 +167,16 @@ Performance metrics are essential in evaluating the accuracy and effectiveness o
 - **Use Case**: Visualizing how closely the predictions align with reality.
 - **Interpretation**: Closer alignment indicates better model performance.
 
+<figure>
+  <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/abbf3c23-cfde-496e-892c-cf1cc532fe19" alt="chart-predicted-true-good" style="width:100%">
+  <figcaption>Fig.1: Predicted vs True graph for a good model</figcaption>
+</figure>
+
+<figure>
+  <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/af1e1ab8-b0d3-4022-b76e-7a8837eb8f4b" alt="hart-predicted-true-bad" style="width:100%">
+  <figcaption>Fig.2: Predicted vs True graph for a bad model</figcaption>
+</figure>
+
 ### 7. Residual Plot
 - **Description**: A graph that shows the residuals (differences between actual and predicted) on the vertical axis and the independent variable on the horizontal axis.
 - **Use Case**: Checking for non-linearity, unequal error variances, and outliers.
@@ -174,12 +184,12 @@ Performance metrics are essential in evaluating the accuracy and effectiveness o
 
 <figure>
   <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/2599a2b0-237f-4590-b2ea-427a07e2e2e1" alt="chart-residuals-good" style="width:100%">
-  <figcaption>Fig.1: Residual Chart for a good model</figcaption>
+  <figcaption>Fig.3: Residual chart for a good model</figcaption>
 </figure>
 
 <figure>
   <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/2351b533-bf84-46ff-b716-a8245aa0c9aa" alt="chart-residuals-bad" style="width:100%">
-  <figcaption>Fig.2: Residual Chart for a bad model</figcaption>
+  <figcaption>Fig.4: Residual chart for a bad model</figcaption>
 </figure>
 
 ### 8. Learning Curve
@@ -190,6 +200,11 @@ Performance metrics are essential in evaluating the accuracy and effectiveness o
   - **Underfitting**: Both training and validation scores are low, showing the model is too simple and unable to capture the underlying pattern. Neither the training nor the validation score improves significantly with more data.
 - **Usage**: Essential in diagnosing model behavior, especially for understanding if adding more data is helpful, or if the model needs adjustments for complexity.
 - **High vs. Low Values**: In learning curves, high training scores are desirable but should be close to validation scores for good model performance.
+
+<figure>
+  <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/37228245-2826-4a0f-b47e-f87969159610" alt="plot_learning_curve_001" style="width:100%">
+  <figcaption>Fig.5: Learning curve example</figcaption>
+</figure>
 
 ## Notes
 Selecting the right metrics and visual tools like learning curves is critical for accurately assessing model performance. These tools provide both quantitative measures and visual insights into model behavior, guiding towards informed strategies for model improvement.
