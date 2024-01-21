@@ -172,6 +172,16 @@ Performance metrics are essential in evaluating the accuracy and effectiveness o
 - **Use Case**: Checking for non-linearity, unequal error variances, and outliers.
 - **Interpretation**: Randomly dispersed residuals suggest a good fit for the model.
 
+<figure>
+  <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/2599a2b0-237f-4590-b2ea-427a07e2e2e1" alt="chart-residuals-good" style="width:100%">
+  <figcaption>Fig.1: Residual Chart for a good model</figcaption>
+</figure>
+
+<figure>
+  <img src="https://github.com/Tahmid2019/Doc_ML_Process/assets/47871411/2351b533-bf84-46ff-b716-a8245aa0c9aa" alt="chart-residuals-bad" style="width:100%">
+  <figcaption>Fig.2: Residual Chart for a bad model</figcaption>
+</figure>
+
 ### 8. Learning Curve
 - **Description**: A learning curve is a graphical representation that shows how the performance of a machine learning model changes as the amount of training data increases. It typically plots training and validation performance metrics against the size of the training dataset.
 - **Interpreting Learning Curves**:
