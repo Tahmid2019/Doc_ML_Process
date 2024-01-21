@@ -438,8 +438,30 @@ In addition to the core model training and evaluation steps, several concepts an
   - Too low can make the training process unnecessarily long and prone to getting stuck in local minima.
 
 ### Normalization vs. Standardization (Scaling)
-- **Normalization**: Rescales the data to a fixed range, typically 0 to 1.
-- **Standardization**: Rescales data to have a mean of 0 and a standard deviation of 1, transforming it to a standard normal distribution.
+
+#### Normalization
+- **Purpose**: Rescales the data to a fixed range, typically 0 to 1. This technique is used to bring different features to a common scale, allowing for easier comparison and processing.
+- **Method**: The common approach is to subtract the minimum value of each feature and then divide by the range (max - min) of the feature. This transforms all the points in the feature to fall within the specified range.
+- **Use Cases**:
+  - Ideal for situations where features have different scales and you want them to contribute equally to the analysis.
+  - Used in algorithms that are sensitive to the scale of data, such as k-nearest neighbors (KNN) and neural networks.
+  - Necessary in applications requiring bounded values, like image processing where pixel intensities range from 0 to 255.
+
+#### Standardization
+- **Purpose**: Rescales data to have a mean of 0 and a standard deviation of 1. Unlike normalization, it does not bind values to a specific range, which might be necessary for some algorithms or datasets.
+- **Method**: Involves subtracting the mean of each feature and then dividing by the standard deviation. This process transforms the data into a distribution with a mean of 0 and a standard deviation of 1.
+- **Use Cases**:
+  - Suitable for algorithms that assume features are centered around zero and have variance in the same order, such as Support Vector Machines (SVM) and Principal Component Analysis (PCA).
+  - More effective in handling outliers, as standardization is less sensitive to them compared to normalization.
+  - Beneficial in scenarios where the data follows a Gaussian distribution, as standardization can align the data more closely with this assumption.
+
+#### Choosing Between Them
+- **Data Distribution**: Consider normalization for non-Gaussian distributions and standardization for Gaussian distributions.
+- **Algorithm Requirements**: Some algorithms have specific recommendations for either normalization or standardization.
+- **Outliers**: Standardization might be a better choice in the presence of many outliers.
+- **Domain Requirements**: Certain fields or applications might have standard practices favoring one method over the other.
+
+In practice, the choice can often be empirical. Trying both methods and assessing the performance of the model in each case can be an effective way to determine the most suitable technique for your specific dataset and problem.
 
 ### Popular Open Source Classification Problem Datasets
 - UCI Machine Learning Repository
